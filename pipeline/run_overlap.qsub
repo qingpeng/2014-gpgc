@@ -1,0 +1,11 @@
+#!/bin/bash -login
+#PBS -l walltime=150:00:00,nodes=01:ppn=1,mem=1000gb
+#PBS -q main
+#PBS -M qingpeng@gmail.com
+#PBS -m abe
+#PBS -A ged-intel11
+
+module load khmer
+cd /mnt/scratch/tg/qingpeng
+#python /mnt/home/qingpeng/bin/khmer/scripts/load-into-counting.py --ksize 22 --n_hashes 4 --hashsize 200e9 all_iowa_prairie.ht /mnt/research/adina/gpgc-trimmed-reads/iowa-corn/iowa-corn-all-reads-minus-649-30min-70N.fasta
+python /mnt/home/qingpeng/count-median-multifile.py all_iowa_prairie.ht iowa_overlap.out /mnt/research/adina/gpgc-trimmed-reads/iowa-prairie/*.gz
