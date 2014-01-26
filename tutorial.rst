@@ -5,6 +5,10 @@ Running the diversity paper script pipeline
 :Date: June 20, 2013
 
  
+ corn/ prairie all convert to fasta format
+ and combine them together to have two fasta files
+ 
+ 
 Installing necessary software
 -----------------------------
 

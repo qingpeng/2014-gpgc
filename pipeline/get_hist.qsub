@@ -1,0 +1,8 @@
+#!/bin/bash -login
+#PBS -l walltime=24:00:00,nodes=01:ppn=1,mem=10gb
+#PBS -q main
+#PBS -M qingpeng@gmail.com
+#PBS -m abe
+#PBS -A ged-intel11
+/mnt/scratch/tg/qingpeng/2004-gpgc/run
+python get_hist.py iowa_overlap.out iowa_overlap.out.hist

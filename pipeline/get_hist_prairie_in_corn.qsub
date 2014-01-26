@@ -1,0 +1,8 @@
+#!/bin/bash -login
+#PBS -l walltime=24:00:00,nodes=01:ppn=1,mem=10gb
+#PBS -q main
+#PBS -M qingpeng@gmail.com
+#PBS -m abe
+#PBS -A ged-intel11
+cd /mnt/scratch/tg/qingpeng/2004-gpgc/run
+python /mnt/home/qingpeng/Dropbox/Work/Manuscript/2014-gpgc/pipeline/get_hist.py iowa_overlap_prairie_in_corn.out iowa_overlap_prairie_in_corn.out.hist
