@@ -1,0 +1,10 @@
+#!/bin/bash -login
+#PBS -l walltime=60:00:00,nodes=01:ppn=1,mem=2gb
+#PBS -q main
+#PBS -M qingpeng@gmail.com
+#PBS -m abe
+#PBS -A ged-intel11
+module load screed
+cd /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-prairie
+python /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-corn/fastq-to-fasta.py iowa-prairie-all.fastq >iowa-prairie-all.fasta 
+
