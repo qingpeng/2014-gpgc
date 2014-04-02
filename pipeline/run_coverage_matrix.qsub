@@ -14,3 +14,4 @@ python /mnt/home/qingpeng/bin/khmer/scripts/load-into-counting.py --ksize 20 --n
 cd /mnt/scratch/tg/qingpeng/2004-gpgc/run
 python /home/qingpeng/Dropbox/Work/Manuscript/2014-gpgc/pipeline/calc-coverage-matrix.py /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-prairie/iowa-prairie-all-small-new.ht /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-corn/iowa-corn-all-small.ht /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-prairie/iowa-prairie-all.fasta /mnt/scratch/tg/qingpeng/Iowa_Data_From_Adina/gpgc-trimmed-reads/iowa-corn/iowa-corn-all.fasta full_corn_prairie_coverage_matrix.out
 
+python get_matrix_two_files.py full_corn_prairie_coverage_two_files.out two_files_matrix.out
